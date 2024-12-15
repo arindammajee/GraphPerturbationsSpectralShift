@@ -2,7 +2,7 @@
 
 # Spectral Impact of Graph Topology Perturbations: Variance Analysis of Normalized Laplacian Eigenvalues
 
-\textcolor{red}{\textbf{Note:}} This work is a continuous project and may not reflect real-time updates. We appreciate your understanding.
+$${\color{red}This \space work \space is \space a \space a \space ongoing  \space project \space and \space may \space not \space reflect \space real-time \space updates. \space We \space appreciate \space your \space understanding.}$$
 
 ## Overview
 This repository contains the research report *"Spectral Impact of Graph Topology Perturbations: Variance Analysis of Normalized Laplacian Eigenvalues"*, which explores how changes in graph topology affect the spectral properties of the normalized Laplacian matrix. Specifically, the report analyzes the variance of eigenvalues under various graph perturbations, offering theoretical insights and potential applications in network science, machine learning, and optimization. The report can be found here - [Spectral_Impact_of_Graph_Topology_Perturbations.pdf](https://github.com/arindammajee/GraphPerturbationsSpectralShift/blob/main/Spectral_Impact_of_Graph_Topology_Perturbations.pdf)
