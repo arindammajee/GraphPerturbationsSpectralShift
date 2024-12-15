@@ -2,9 +2,12 @@
 
 # Spectral Impact of Graph Topology Perturbations: Variance Analysis of Normalized Laplacian Eigenvalues
 
+\textcolor{red}{\textbf{Note:}} This work is a continuous project and may not reflect real-time updates. We appreciate your understanding.
+
 ## Overview
 This repository contains the research report *"Spectral Impact of Graph Topology Perturbations: Variance Analysis of Normalized Laplacian Eigenvalues"*, which explores how changes in graph topology affect the spectral properties of the normalized Laplacian matrix. Specifically, the report analyzes the variance of eigenvalues under various graph perturbations, offering theoretical insights and potential applications in network science, machine learning, and optimization. The report can be found here - [Spectral_Impact_of_Graph_Topology_Perturbations.pdf](https://github.com/arindammajee/GraphPerturbationsSpectralShift/blob/main/Spectral_Impact_of_Graph_Topology_Perturbations.pdf)
 
+##
 ---
 
 ## Table of Contents
@@ -41,6 +44,10 @@ The study employs:
 - Graph perturbations significantly affect the variance of eigenvalues, with larger perturbations causing more pronounced spectral shifts.
 - Edge additions and removals exhibit distinct variance patterns based on the graph structure and degree distributions.
 - Rewiring strategies can be employed to mitigate adverse spectral effects, optimizing graph-based models in learning applications.
+
+Here is an experimental results on how Laplacian spectrum varies with edge sparsity. We have controlled the sparsity after changing number of edges in the graph.
+![Image2](images/EdgeSparsityAndRandomGraphs-2.png) 
+![Image1](images/EdgeSparsityAndRandomGraphs-1.png) 
 
 ---
 
