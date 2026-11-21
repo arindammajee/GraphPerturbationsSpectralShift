@@ -1,0 +1,24 @@
+# Graph datasets for the over-smoothing pilot (downloaded locally).
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Editor / OS
+.DS_Store
+*.swp
+
+# In-progress pilot writes. The complete table is train_rows.json.
+train_rows_partial.json
+train_rows_gcn_backup.json
+*.json.tmp

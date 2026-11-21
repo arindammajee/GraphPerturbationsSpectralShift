@@ -16,6 +16,7 @@ This repository contains the research report *"Spectral Impact of Graph Topology
 3. [Methodology](#methodology)
 4. [Key Findings](#key-findings)
 5. [Applications and Future Work](#applications-and-future-work)
+6. [Research log](#research-log)
 
 ---
 
@@ -58,6 +59,12 @@ This research opens several avenues for future exploration:
 - **Dynamic Networks:** Applying eigenvalue variance analysis to time-evolving graphs for prediction tasks.
 - **Network Design Optimization:** Designing algorithms to optimize graph structures, reducing eigenvalue variance for stable network performance.
 - **Real-World Validation:** Conducting empirical studies on large-scale datasets from social networks, transportation systems, and biological systems.
+
+---
+
+## Research log
+
+Follow-up notes, the spectral-variance checks, and the over-smoothing pilot are indexed in [research/README.md](research/README.md). The pilot found that eigenvalue variance is a weak or negative predictor of GNN over-smoothing.
 
 ---
 

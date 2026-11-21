@@ -1,0 +1,30 @@
+{
+  "elapsed_seconds": 718.6671090126038,
+  "time_budget_sec": 2280,
+  "n_datasets": 10,
+  "dataset_names": [
+    "Cora",
+    "CiteSeer",
+    "PubMed",
+    "Texas",
+    "Wisconsin",
+    "Cornell",
+    "Chameleon",
+    "Squirrel",
+    "Roman-empire",
+    "Amazon-ratings"
+  ],
+  "n_train_rows": 213,
+  "choices": {
+    "graph": "largest connected component of the undirected simple graph (self-loops removed)",
+    "sigma2": "T1 closed form; isolates L_ii=0. After LCC, n0 is typically 0.",
+    "gcn": "Kipf-Welling renormalisation (A+I), hidden=32, Adam lr=0.01, wd=5e-4, dropout=0.5, early stopping on val acc",
+    "sgc": "same P=(A+I) propagator, then StandardScaler + logistic regression on train nodes",
+    "splits": "Planetoid official split with random inits; geom-GCN / Platonov official splits otherwise",
+    "intervention": "greedy delete+add scored by exact T2 composition, reject disconnecting or isolate-creating swaps; random control uses the median swap count"
+  },
+  "plot_paths": [
+    "figures/sigma2_vs_oversmoothing.png",
+    "figures/intervention_oversmoothing_curves.png"
+  ]
+}
