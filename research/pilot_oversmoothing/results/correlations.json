@@ -1,0 +1,240 @@
+[
+  {
+    "propagator": "no_self_loops",
+    "targets": {
+      "alpha": {
+        "vs": {
+          "sigma2": {
+            "n": 10,
+            "spearman": -0.05454545454545454,
+            "pvalue": 0.8810361811618526
+          },
+          "inv_mean_degree": {
+            "n": 10,
+            "spearman": 0.28484848484848485,
+            "pvalue": 0.4250381548921454
+          },
+          "sigma2_times_mean_degree": {
+            "n": 10,
+            "spearman": -0.16363636363636364,
+            "pvalue": 0.6514773427962428
+          },
+          "edge_homophily": {
+            "n": 10,
+            "spearman": -0.6606060606060605,
+            "pvalue": 0.03758837757140934
+          },
+          "spectral_gap_matching": {
+            "n": 9,
+            "spearman": 0.9500000000000001,
+            "pvalue": 8.762523965086185e-05
+          }
+        },
+        "sigma2_beyond_d_and_h": {
+          "n": 10,
+          "partial_spearman": -0.4424242424242424,
+          "pvalue": 0.20042268671194213,
+          "controls": [
+            "inv_mean_degree",
+            "edge_homophily"
+          ]
+        }
+      },
+      "dirichlet_k16": {
+        "vs": {
+          "sigma2": {
+            "n": 10,
+            "spearman": 0.43030303030303024,
+            "pvalue": 0.21449233253280775
+          },
+          "inv_mean_degree": {
+            "n": 10,
+            "spearman": 0.3939393939393939,
+            "pvalue": 0.25999776683488757
+          },
+          "sigma2_times_mean_degree": {
+            "n": 10,
+            "spearman": -0.4787878787878787,
+            "pvalue": 0.16152292801745594
+          },
+          "edge_homophily": {
+            "n": 10,
+            "spearman": 0.13939393939393938,
+            "pvalue": 0.7009318849100584
+          },
+          "spectral_gap_matching": {
+            "n": 9,
+            "spearman": -0.45,
+            "pvalue": 0.22421610749233675
+          }
+        },
+        "sigma2_beyond_d_and_h": {
+          "n": 10,
+          "partial_spearman": -0.2121212121212121,
+          "pvalue": 0.5563057751029299,
+          "controls": [
+            "inv_mean_degree",
+            "edge_homophily"
+          ]
+        }
+      },
+      "mad_k16": {
+        "vs": {
+          "sigma2": {
+            "n": 10,
+            "spearman": 0.11515151515151514,
+            "pvalue": 0.7514196523258485
+          },
+          "inv_mean_degree": {
+            "n": 10,
+            "spearman": -0.29696969696969694,
+            "pvalue": 0.40470167127015705
+          },
+          "sigma2_times_mean_degree": {
+            "n": 10,
+            "spearman": 0.43030303030303024,
+            "pvalue": 0.21449233253280775
+          },
+          "edge_homophily": {
+            "n": 10,
+            "spearman": 0.6606060606060605,
+            "pvalue": 0.03758837757140934
+          },
+          "spectral_gap_matching": {
+            "n": 9,
+            "spearman": -0.7333333333333334,
+            "pvalue": 0.024554150071469705
+          }
+        },
+        "sigma2_beyond_d_and_h": {
+          "n": 10,
+          "partial_spearman": 0.2727272727272727,
+          "pvalue": 0.4458383415427516,
+          "controls": [
+            "inv_mean_degree",
+            "edge_homophily"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "propagator": "with_self_loops",
+    "targets": {
+      "alpha": {
+        "vs": {
+          "sigma2": {
+            "n": 10,
+            "spearman": -0.17575757575757575,
+            "pvalue": 0.6271883447764846
+          },
+          "inv_mean_degree": {
+            "n": 10,
+            "spearman": 0.07878787878787878,
+            "pvalue": 0.8287173946974606
+          },
+          "sigma2_times_mean_degree": {
+            "n": 10,
+            "spearman": -0.22424242424242422,
+            "pvalue": 0.5334005612725947
+          },
+          "edge_homophily": {
+            "n": 10,
+            "spearman": -0.35757575757575755,
+            "pvalue": 0.31037609170568026
+          },
+          "spectral_gap_matching": {
+            "n": 9,
+            "spearman": 0.9333333333333332,
+            "pvalue": 0.00023589981215941651
+          }
+        },
+        "sigma2_beyond_d_and_h": {
+          "n": 10,
+          "partial_spearman": -0.5515151515151515,
+          "pvalue": 0.09840117666963498,
+          "controls": [
+            "inv_mean_degree",
+            "edge_homophily"
+          ]
+        }
+      },
+      "dirichlet_k16": {
+        "vs": {
+          "sigma2": {
+            "n": 10,
+            "spearman": 0.5515151515151515,
+            "pvalue": 0.09840117666963498
+          },
+          "inv_mean_degree": {
+            "n": 10,
+            "spearman": 0.38181818181818183,
+            "pvalue": 0.2762553333854362
+          },
+          "sigma2_times_mean_degree": {
+            "n": 10,
+            "spearman": -0.29696969696969694,
+            "pvalue": 0.40470167127015705
+          },
+          "edge_homophily": {
+            "n": 10,
+            "spearman": 0.17575757575757575,
+            "pvalue": 0.6271883447764846
+          },
+          "spectral_gap_matching": {
+            "n": 9,
+            "spearman": -0.5666666666666667,
+            "pvalue": 0.1116329876114912
+          }
+        },
+        "sigma2_beyond_d_and_h": {
+          "n": 10,
+          "partial_spearman": 0.16363636363636364,
+          "pvalue": 0.6514773427962428,
+          "controls": [
+            "inv_mean_degree",
+            "edge_homophily"
+          ]
+        }
+      },
+      "mad_k16": {
+        "vs": {
+          "sigma2": {
+            "n": 10,
+            "spearman": 0.12727272727272726,
+            "pvalue": 0.7260570147627894
+          },
+          "inv_mean_degree": {
+            "n": 10,
+            "spearman": -0.2606060606060606,
+            "pvalue": 0.46708905438634024
+          },
+          "sigma2_times_mean_degree": {
+            "n": 10,
+            "spearman": 0.41818181818181815,
+            "pvalue": 0.22911284098281892
+          },
+          "edge_homophily": {
+            "n": 10,
+            "spearman": 0.6484848484848483,
+            "pvalue": 0.04254012768448949
+          },
+          "spectral_gap_matching": {
+            "n": 9,
+            "spearman": -0.6833333333333333,
+            "pvalue": 0.04244227208707231
+          }
+        },
+        "sigma2_beyond_d_and_h": {
+          "n": 10,
+          "partial_spearman": 0.309090909090909,
+          "pvalue": 0.38484123026128353,
+          "controls": [
+            "inv_mean_degree",
+            "edge_homophily"
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,43 @@
+=== Phase 1: load + stats ===
+loaded Cora: n=2485 (full 2708) m=5069 f=1433 c=7 splits=1
+loaded CiteSeer: n=2120 (full 3327) m=3679 f=3703 c=6 splits=1
+loaded PubMed: n=19717 (full 19717) m=44324 f=500 c=3 splits=1
+loaded Texas: n=183 (full 183) m=279 f=1703 c=5 splits=10
+loaded Wisconsin: n=251 (full 251) m=450 f=1703 c=5 splits=10
+loaded Cornell: n=183 (full 183) m=277 f=1703 c=5 splits=10
+loaded Chameleon: n=2277 (full 2277) m=31371 f=2325 c=5 splits=10
+loaded Squirrel: n=5201 (full 5201) m=198353 f=2089 c=5 splits=10
+loaded Roman-empire: n=22662 (full 22662) m=32927 f=300 c=18 splits=10
+loaded Amazon-ratings: n=24492 (full 24492) m=93050 f=300 c=5 splits=10
+  Cora: n=2485 m=5069 sigma2=0.23889 <d>=4.080 s2*<d>=0.975 h=0.804 gap=0.0048 n0=0
+  CiteSeer: n=2120 m=3679 sigma2=0.29897 <d>=3.471 s2*<d>=1.038 h=0.735 gap=0.0016 n0=0
+  PubMed: n=19717 m=44324 sigma2=0.13487 <d>=4.496 s2*<d>=0.606 h=0.802 gap=0.0141 n0=0
+  Texas: n=183 m=279 sigma2=0.21972 <d>=3.049 s2*<d>=0.670 h=0.061 gap=0.0632 n0=0
+  Wisconsin: n=251 m=450 sigma2=0.22130 <d>=3.586 s2*<d>=0.794 h=0.178 gap=0.0765 n0=0
+  Cornell: n=183 m=277 sigma2=0.22739 <d>=3.027 s2*<d>=0.688 h=0.123 gap=0.0797 n0=0
+  Chameleon: n=2277 m=31371 sigma2=0.05262 <d>=27.555 s2*<d>=1.450 h=0.230 gap=0.0064 n0=0
+  Squirrel: n=5201 m=198353 sigma2=0.04103 <d>=76.275 s2*<d>=3.130 h=0.222 gap=0.0437 n0=0
+  Roman-empire: n=22662 m=32927 sigma2=0.34154 <d>=2.906 s2*<d>=0.992 h=0.047 gap=nan n0=0
+  Amazon-ratings: n=24492 m=93050 sigma2=0.12098 <d>=7.598 s2*<d>=0.919 h=0.380 gap=0.0001 n0=0
+=== Phase 2: over-smoothing curves ===
+  Cora loops: alpha=0.0990 (R2=0.801) E16=5.9903e-07 half=2 (1.6s)
+  CiteSeer loops: alpha=0.0873 (R2=0.780) E16=3.3882e-07 half=2 (7.5s)
+  PubMed loops: alpha=0.0981 (R2=0.801) E16=2.1354e-06 half=2 (7.3s)
+  Texas loops: alpha=0.1655 (R2=0.889) E16=1.1448e-07 half=2 (0.9s)
+  Wisconsin loops: alpha=0.1808 (R2=0.948) E16=2.0219e-07 half=2 (0.8s)
+  Cornell loops: alpha=0.1798 (R2=0.947) E16=2.1175e-07 half=2 (0.8s)
+  Chameleon loops: alpha=0.1052 (R2=0.712) E16=5.6633e-08 half=2 (7.2s)
+  Squirrel loops: alpha=0.1420 (R2=0.847) E16=4.1047e-08 half=2 (33.8s)
+  Roman-empire loops: alpha=0.0861 (R2=0.773) E16=2.8318e-06 half=2 (3.2s)
+  Amazon-ratings loops: alpha=0.0681 (R2=0.696) E16=2.5922e-06 half=2 (7.8s)
+=== Phase 3: across-dataset correlations ===
+  no_self_loops
+    alpha: sigma2: r=-0.05454545454545454, inv_mean_degree: r=0.28484848484848485, sigma2_times_mean_degree: r=-0.16363636363636364, edge_homophily: r=-0.6606060606060605, spectral_gap_matching: r=0.9500000000000001 | partial s2={'n': 10, 'partial_spearman': -0.4424242424242424, 'pvalue': 0.20042268671194213, 'controls': ['inv_mean_degree', 'edge_homophily']}
+    dirichlet_k16: sigma2: r=0.43030303030303024, inv_mean_degree: r=0.3939393939393939, sigma2_times_mean_degree: r=-0.4787878787878787, edge_homophily: r=0.13939393939393938, spectral_gap_matching: r=-0.45 | partial s2={'n': 10, 'partial_spearman': -0.2121212121212121, 'pvalue': 0.5563057751029299, 'controls': ['inv_mean_degree', 'edge_homophily']}
+    mad_k16: sigma2: r=0.11515151515151514, inv_mean_degree: r=-0.29696969696969694, sigma2_times_mean_degree: r=0.43030303030303024, edge_homophily: r=0.6606060606060605, spectral_gap_matching: r=-0.7333333333333334 | partial s2={'n': 10, 'partial_spearman': 0.2727272727272727, 'pvalue': 0.4458383415427516, 'controls': ['inv_mean_degree', 'edge_homophily']}
+  with_self_loops
+    alpha: sigma2: r=-0.17575757575757575, inv_mean_degree: r=0.07878787878787878, sigma2_times_mean_degree: r=-0.22424242424242422, edge_homophily: r=-0.35757575757575755, spectral_gap_matching: r=0.9333333333333332 | partial s2={'n': 10, 'partial_spearman': -0.5515151515151515, 'pvalue': 0.09840117666963498, 'controls': ['inv_mean_degree', 'edge_homophily']}
+    dirichlet_k16: sigma2: r=0.5515151515151515, inv_mean_degree: r=0.38181818181818183, sigma2_times_mean_degree: r=-0.29696969696969694, edge_homophily: r=0.17575757575757575, spectral_gap_matching: r=-0.5666666666666667 | partial s2={'n': 10, 'partial_spearman': 0.16363636363636364, 'pvalue': 0.6514773427962428, 'controls': ['inv_mean_degree', 'edge_homophily']}
+    mad_k16: sigma2: r=0.12727272727272726, inv_mean_degree: r=-0.2606060606060606, sigma2_times_mean_degree: r=0.41818181818181815, edge_homophily: r=0.6484848484848483, spectral_gap_matching: r=-0.6833333333333333 | partial s2={'n': 10, 'partial_spearman': 0.309090909090909, 'pvalue': 0.38484123026128353, 'controls': ['inv_mean_degree', 'edge_homophily']}
+=== Phase 4: interventions ===
+  rewiring Cora (n=2485, m=5069) ...
